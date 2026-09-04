@@ -1,0 +1,34 @@
+.vscode/
+*venv*/*
+*.egg-info/
+*.egg
+.eggs/
+
+*.DS_Store*
+*.ipynb_checkpoints
+*.$*.bkp
+.DS_Store
+.idea/
+.cache/
+*.$*.kp
+**/__pycache__/
+*.cpython-310.pyc
+*.pyc
+*.nbc
+*.nbi
+
+*wandb/
+src/cuda*
+
+# data
+# images/
+public_datasets/2D
+public_datasets/3D
+datasets/*
+results/*
+models/*
+# latex_tables
+latent_images/
+decoded_images/
+
+tests/

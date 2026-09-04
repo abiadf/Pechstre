@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pechstre"
+version = "0.1.0"
+description = "Exact streamed-prefix persistent homology for chunked 1D and 2D data"
+readme = "readme.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Fouad Abiad" },
+]
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "psutil",
+  "torch",
+  "tqdm",
+]
+
+[project.urls]
+Repository = "https://github.com/abiadf/Pechstre"
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8",
+]
+
+[tool.setuptools.packages.find]
+include = ["topo*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
